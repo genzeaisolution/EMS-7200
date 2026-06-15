@@ -16,6 +16,7 @@ export default defineConfig({
       '@/store': path.resolve(__dirname, './src/store'),
     },
   },
+
   server: {
     port: 7700,
     proxy: {
@@ -25,4 +26,8 @@ export default defineConfig({
       },
     },
   },
+
+  preview: {
+    allowedHosts: true
+  }
 });
